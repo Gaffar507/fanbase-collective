@@ -63,6 +63,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="container hero-wrapper">
+
         <div class="hero-content">
           <span class="hero-tagline">
             The moments are always happening.
@@ -106,37 +107,94 @@
             </span>
           </h1>
 
-          <p>
+          <p class="hero-description">
             Most marketing ask customers to remember the business. <br>
             <span>Recommendation Marketing</span> <br> help businesses remember customers first.
           </p>
 
-          <div class="hero-features">
-            <div class="feature-card">
-              <div class="icon-circle">
-                <i class="fa-regular fa-user"></i>
-              </div>
-              <h4>Turn customer activity into action</h4>
+
+
+
+        <!-- Hero Features -->
+<!-- 4-Steps Process Flow Row -->
+        <div class="hiw-flow-container">
+            
+            <!-- STEP 1 -->
+            <div class="hiw-step-node">
+                <div class="icon-avatar-wrapper">
+                    <span class="node-number-badge">1</span>
+                    <div class="square-outer-icon">
+                        <div class="square-inner-dot"></div>
+                    </div>
+                </div>
+                <h3 class="node-heading">CONNECT SQUARE</h3>
+                <p class="node-paragraph">Import purchase history securely.</p>
             </div>
 
-            <div class="feature-card">
-              <div class="icon-circle">
-                <i class="fa-regular fa-envelope"></i>
-              </div>
-              <h4>We build the email for you</h4>
+            <!-- ARROW -->
+            <div class="hiw-arrow-node">➔</div>
+
+            <!-- STEP 2 -->
+            <div class="hiw-step-node">
+                <div class="icon-avatar-wrapper">
+                    <span class="node-number-badge">2</span>
+                    <!-- Target/Dartboard SVG Icon matching perfectly -->
+                    <svg class="custom-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="12" r="6" />
+                        <circle cx="12" cy="12" r="2" />
+                        <line x1="12" y1="2" x2="12" y2="6" />
+                        <line x1="12" y1="18" x2="12" y2="22" />
+                        <line x1="2" y1="12" x2="6" y2="12" />
+                        <line x1="18" y1="12" x2="22" y2="12" />
+                    </svg>
+                </div>
+                <h3 class="node-heading">CHOOSE CAMPAIGN</h3>
+                <p class="node-paragraph">Pick the recommendation type that fits your goal.</p>
             </div>
 
-            <div class="feature-card">
-              <div class="icon-circle">
-                <i class="fa-regular fa-calendar"></i>
-              </div>
-              <h4>You decide when to send it</h4>
+            <!-- ARROW -->
+            <div class="hiw-arrow-node">➔</div>
+
+            <!-- STEP 3 -->
+            <div class="hiw-step-node">
+                <div class="icon-avatar-wrapper">
+                    <span class="node-number-badge">3</span>
+                    <!-- Mail Envelope SVG Icon matching perfectly -->
+                    <svg class="custom-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                </div>
+                <h3 class="node-heading">WE BUILD THE EMAIL</h3>
+                <p class="node-paragraph">We create the email using your products and branding.</p>
+            </div>
+
+            <!-- ARROW -->
+            <div class="hiw-arrow-node">➔</div>
+
+            <!-- STEP 4 -->
+            <div class="hiw-step-node">
+                <div class="icon-avatar-wrapper">
+                    <span class="node-number-badge">4</span>
+                    <!-- Calendar SVG Icon matching perfectly -->
+                    <svg class="custom-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                        <path d="M7 14h.01M12 14h.01M17 14h.01M7 18h.01M12 18h.01M17 18h.01" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3 class="node-heading">YOU SCHEDULE IT</h3>
+                <p class="node-paragraph">Send today, next week, or next month.</p>
             </div>
           </div>
         </div>
 
+
         <div class="hero-image">
-          <img src="./assets/images/hero-image.png" alt="Restaurant Owner" />
+          <img src="./assets/images/hero-image.jpeg" alt="Restaurant Owner" />
 
           <div class="pricing-badge">
             <div class="badge-top">
@@ -212,7 +270,6 @@
               <li>250 contacts</li>
               <li>Up to 1,250 emails/month</li>
               <li>Recommendation Campaigns</li>
-              <li>Campaign Tracking</li>
               <li>Customer Segments</li>
               <li>Square Integration</li>
             </ul>
@@ -249,8 +306,6 @@
             <ul class="plan-features">
               <li>500 contacts</li>
               <li>Up to 2,500 emails/month</li>
-              <li>All Spark Features</li>
-              <li>Advanced Segments</li>
               <li>Priority Support</li>
             </ul>
 
@@ -272,8 +327,6 @@
             <ul class="plan-features">
               <li>1,500 contacts</li>
               <li>Up to 15,000 emails/month</li>
-              <li>All Launch Features</li>
-              <li>A/B Testing</li>
               <li>Dedicated Onboarding</li>
             </ul>
 
@@ -295,8 +348,6 @@
             <ul class="plan-features">
               <li>5,000 contacts</li>
               <li>Up to 50,000 emails/month</li>
-              <li>All Starter Features</li>
-              <li>Predictive Segments</li>
               <li>Priority Onboarding</li>
             </ul>
 
@@ -318,8 +369,6 @@
             <ul class="plan-features">
               <li>15,000 contacts</li>
               <li>Up to 150,000 emails/month</li>
-              <li>All Grow Features</li>
-              <li>Custom Reporting</li>
               <li>VIP Support</li>
             </ul>
 

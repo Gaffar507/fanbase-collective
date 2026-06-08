@@ -229,7 +229,7 @@ ul {
    HERO
 ========== */
 .hero {
-  padding: 20px 0 70px;
+  padding: 20px 0 50px;
   overflow: hidden;
 }
 
@@ -272,7 +272,7 @@ ul {
   letter-spacing: 1px;
 }
 
-.hero h1 span {
+.hero span {
   color: var(--secondary);
 }
 
@@ -289,7 +289,7 @@ ul {
   display: inline-flex;
 }
 
-.hero p {
+.hero-description {
   max-width: 520px;
   font-size: 20px;
   line-height: 1.6;
@@ -298,44 +298,111 @@ ul {
   font-weight: 550;
 }
 
-.hero p span {
+.hero-description span {
  color: var(--secondary);
 }
 
-.hero-features {
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
-  width: 100%;
+
+/* Hero Features */
+.hiw-flow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 580px;
+    padding-top: 10px;
 }
 
-.feature-card {
-  text-align: left;
-  max-width: 150px;
+/* Single Step Block Model */
+.hiw-step-node {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 0; 
 }
 
-.icon-circle {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: var(--bg-blue-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
+.icon-avatar-wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-blue-light); 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: var(--text-muted-blue);
 }
 
-.icon-circle i {
-  color: var(--solid-blue);
-  font-size: 28px;
+.node-number-badge {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #0c33a6; 
+    color: var(--white) !important;
+    font-size: 12px;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.feature-card h4 {
-  font-size: 16px;
-  color: var(--primary);
-  line-height: 1.4;
+/* Custom Vector Icons Stylesheet */
+.custom-svg-icon {
+    width: 35px;
+    height: 35px;
 }
 
+/* Step 1 Unique Custom Built Square Connect Emblem */
+.square-outer-icon {
+    width: 35px;
+    height: 35px;
+    border: 4px solid var(--text-muted-blue);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square-inner-dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--text-muted-blue);
+    border-radius: 4px;
+}
+
+/* Typography Hierarchy Configuration */
+.node-heading {
+    color: var(--text-muted-blue);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+
+.node-paragraph {
+    color: var(--text-muted-blue);
+    font-size: 13px !important;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Directional Flow Arrow Node Element */
+.hiw-arrow-node {
+    align-self: center;
+    color: var(--text-muted-blue);
+    font-size: 20px;
+    margin-top: -120px; 
+    user-select: none;
+}
+
+
+/* Hero right side  */
 .hero-image {
   position: relative;
   height: 100%;
@@ -343,22 +410,21 @@ ul {
 
 .hero-image img {
   width: 100%;
-  height: 600px;
-  border-radius: 30px;
+  height: 500px;
   display: block;
+  object-fit: contain;
 }
 
 .pricing-badge {
-  width: 280px;
+  width: 240px;
   background: var(--secondary);
   color: #fff;
-  padding: 28px 20px;
-  border-radius: 16px;
+  padding: 20px;
+  border-radius: 12px;
   border: rgba(255, 204, 0, 0.605) 1px solid;
   font-family: "Inter", sans-serif;
   position: absolute;
-  left: -60px;
-  bottom: -10px;
+  bottom: 150px;
 }
 
 .badge-top {
@@ -387,7 +453,7 @@ ul {
 }
 
 .price-row h2 {
-  font-size: 58px;
+  font-size: 55px;
   line-height: 0.9;
   font-weight: 800;
   margin: 0;
@@ -442,7 +508,7 @@ ul {
   color: var(--white);
   height: 40px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
   transition: 0.3s;
@@ -455,7 +521,6 @@ ul {
 .badge-btn svg {
   width: 18px;
   height: 18px;
-
   fill: none;
   stroke: var(--white);
   stroke-width: 2.5;
@@ -1532,7 +1597,7 @@ ul {
    HERO
 ========== */
   .hero {
-    padding: 20px 0 50px;
+    padding: 20px 0 30px;
   }
 
   .hero-wrapper {
@@ -1570,88 +1635,12 @@ ul {
     gap: 20px;
   }
 
-  .icon-circle {
-    width: 65px;
-    height: 65px;
-    margin-bottom: 15px;
-  }
-
-  .icon-circle i {
-    font-size: 25px;
-  }
-
-  .feature-card h4 {
-    font-size: 16px;
-  }
-
-  .hero-image {
-    height: 100%;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: 600px;
-  }
-
-  .pricing-badge {
-    width: 260px;
-    padding: 28px 20px;
-    left: -10px;
-    bottom: -10px;
-  }
-
-  .badge-top {
-    gap: 10px;
-    margin-bottom: 12px;
-  }
-
-  .badge-top span {
-    font-size: 14px;
-  }
-
-  .price-row {
-    gap: 8px;
-    margin-bottom: 18px;
-  }
-
-  .price-row h2 {
-    font-size: 50px;
-  }
-
-  .price-row small {
+/* Directional Flow Arrow Node Element */
+.hiw-arrow-node {
     font-size: 18px;
-    margin-bottom: 12px;
-  }
-
-  .divider {
-    margin-bottom: 18px;
-  }
-
-  .badge-features {
-    margin: 0 0 22px;
-  }
-
-  .badge-features li {
-    gap: 10px;
-    font-size: 15px;
-    margin-bottom: 12px;
-  }
-
-  .badge-features svg {
-    width: 14px;
-    height: 14px;
-  }
-
-  .badge-btn {
-    gap: 10px;
-    height: 40px;
-    font-size: 16px;
-  }
-
-  .badge-btn svg {
-    width: 18px;
-    height: 18px;
-  }
+    margin-top: -170px; 
+    user-select: none;
+}
 
   /* =========================
    Pricing Section
@@ -1770,6 +1759,9 @@ ul {
   /* ==========
    HERO
 ========== */
+  .container {
+    padding: 0;
+  }
   .hero {
     padding: 20px 0 50px;
   }
@@ -1784,6 +1776,7 @@ ul {
     max-width: 100%;
     text-align: center;
     margin: 0 auto;
+    
   }
 
   .hero-tagline {
@@ -1794,6 +1787,21 @@ ul {
   .hero h1 {
     font-size: 58px;
     margin-bottom: 25px;
+  }
+  .hero-accent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-description {
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--primary);
+    margin-bottom: 50px;
+    font-weight: 550;
+    margin: 0 auto;
   }
 
   .hero-image {
@@ -1984,21 +1992,93 @@ ul {
 }
 
 @media (max-width: 566.98px) {
-  .hero-features {
-    gap: 0;
-    padding: 0 10px;
+  .hero {
+    padding: 20px 0 50px;
   }
 
-  .feature-card {
-    scale: 0.8;
+  .hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 100%;
   }
+
+
+/* Hero Features */
+.hiw-flow-container {
+    gap: 0px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.icon-avatar-wrapper {
+    width: 50px;
+    height: 50px;
+}
+
+.node-number-badge {
+    top: -10px;
+    left: -10px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 18px;
+    height: 18px;;
+}
+
+/* Custom Vector Icons Stylesheet */
+.custom-svg-icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* Step 1 Unique Custom Built Square Connect Emblem */
+.square-outer-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+.square-inner-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 3px;
+}
+
+/* Typography Hierarchy Configuration */
+.node-heading {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin: 0 0 8px 0;
+}
+
+.node-paragraph {
+    font-size: 13px !important;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Directional Flow Arrow Node Element */
+.hiw-arrow-node {
+    font-size: 18px;
+    margin-top: -170px; 
+    user-select: none;
+}
+
+   .hero-image {
+    max-height: 500px;
+    margin-top: -100px;
+   }
+
 
   .pricing-badge {
     scale: 0.9;
+    bottom: -80px;
   }
 
   .pricing-section {
-    padding: 46px 0;
+    padding: 40px 0;
   }
 
   .pricing-grid {
@@ -2047,9 +2127,45 @@ ul {
     padding: 0px;
   }
 
+  .hero {
+    padding: 0;
+  }
+
+  .hero-content {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  .hero-tagline {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .tagline-decoration svg {
+    width: 300px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .hero-accent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-description {
+    font-size: 12px !important;
+    line-height: 1.6;
+    margin-bottom: 100px;
+    font-weight: 600;
+  }
+
   .pricing-badge {
     scale: 0.8;
-    bottom: -20px;
+    bottom: -60px;
   }
 
   .pricing-grid {
@@ -2060,6 +2176,11 @@ ul {
     padding: 22px 18px;
     scale: 0.9;
   }
+
+  .hiw-arrow-node {
+    margin-top: -160px; 
+}
+
 
   /* comparison section */
   .stat-card {
