@@ -1546,6 +1546,182 @@ ul {
   white-space: nowrap;
 }
 
+/*====== Footer style start ======*/
+.main-footer {
+  background-color: var(--midnight-navy); 
+  padding: 40px 40px 24px 40px;
+  color: var(--white);
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+}
+
+/* Top Sections Matrix Wrap */
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Left Branding Styling */
+.footer-brand {
+  flex: 2;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.brand-logo {
+  width: 200px;
+}
+.brand-logo img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.brand-desc {
+  color: var(--white);
+  font-size: 13.5px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Middle Navigation Block Columns */
+.footer-links-grid {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.links-column {
+  flex: 1;
+}
+
+.main-footer h3 {
+  color: var(--secondary); 
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.links-column ul {
+  list-style: none;
+}
+
+.links-column ul li {
+  margin-bottom: 12px;
+}
+
+.links-column ul li a {
+  color: var(--border);
+  font-size: 13.5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.links-column ul li a:hover {
+  color: var(--white);
+}
+
+/* Right Newsletter Layout Block */
+.footer-newsletter {
+  flex: 2;
+  max-width: 300px;
+}
+
+.footer-newsletter p {
+  color: #94a3b8;
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* Embedded Inline Input-Form Controls */
+.subscribe-form {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 4px;
+  align-items: center;
+  width: 100%;
+}
+
+.subscribe-form input {
+  flex: 1;
+  border: none;
+  background: none;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  color: #000a1f;
+  font-family: inherit;
+  outline: none;
+}
+
+.subscribe-form input::placeholder {
+  color: #94a3b8;
+}
+
+.subscribe-form button {
+  background-color: #f95716;
+  border: none;
+  border-radius: 6px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #e04608;
+}
+
+.subscribe-form button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Bottom Copy and Meta Links Section */
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  font-size: 12.5px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.bottom-links {
+  display: flex;
+  gap: 24px;
+}
+
+.bottom-links a {
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.bottom-links a:hover {
+  color: #94a3b8;
+}
+
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -1863,6 +2039,19 @@ ul {
   .banner-right {
     justify-content: space-between;
   }
+
+  /* Footer style starts */
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-brand, .footer-newsletter {
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer-links-grid {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1964,6 +2153,20 @@ ul {
   .banner-right-wrapper {
     flex-direction: column;
   }
+
+  .footer-links-grid {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .footer-bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .bottom-links {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
 
 @media (max-width: 566.98px) {
@@ -2063,6 +2266,10 @@ ul {
 
   .pricing-card {
     padding: 22px 18px;
+  }
+
+    .footer-links-grid {
+    gap: 20px;
   }
 }
 
