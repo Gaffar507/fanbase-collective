@@ -1622,7 +1622,7 @@ ul {
 }
 
 .links-column ul li a {
-  color: var(--border);
+  color: rgba(242, 237, 237, 0.683);
   font-size: 13.5px;
   text-decoration: none;
   font-weight: 500;
